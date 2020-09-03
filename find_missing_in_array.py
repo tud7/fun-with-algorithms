@@ -1,6 +1,9 @@
 '''
 Given an array of positive numbers from 1 to n, such that all numbers from 1 to n are present except one number x. 
 Find x. The input array is not sorted.
+
+@Author: Tu Duong
+@Date: 09/02/2020
 '''
 
 def find_missing(input):

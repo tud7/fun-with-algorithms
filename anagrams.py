@@ -2,6 +2,7 @@
 Given a list of words, produce an algorithm that will return a list of all anagrams for a specific word
 
 @Author: Tu Duong
+@Date: 09/01/2020
 '''
 
 class AnagramsFinder:
