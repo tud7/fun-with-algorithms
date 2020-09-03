@@ -13,3 +13,16 @@ def find_missing(input):
     input_sum      = sum(input)
     
     return (full_list_sum - input_sum)
+
+
+import unittest
+
+class TestFindMissing(unittest.TestCase):
+
+    def test_find_missing_number(self):
+        missed_num = find_missing([4, 5, 7, 2, 3, 1])
+        self.assertEqual(missed_num, 6)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -19,37 +19,29 @@ def find_sum_of_two(int_array, value):
 
         visited_set.add(i)
 
-    return False;
+    return False
 
 
-'''
-find_sum_of_two([2, 1, 8, 4, 7, 3],3)
-True
-True
-Succeeded
+import unittest
 
-find_sum_of_two([2, 1, 8, 4, 7, 3],7)
-True
-True
-Succeeded
+class TestFindSumOfTwo(unittest.TestCase):
 
-find_sum_of_two([2, 1, 8, 4, 7, 3],20)
-False
-False
-Succeeded
+    def test_sum_of_two1(self):
+        status = find_sum_of_two([2, 1, 8, 4, 7, 3], 3)
+        self.assertEqual(status, True)
+    
+    def test_sum_of_two2(self):
+        status = find_sum_of_two([2, 1, 8, 4, 7, 3], 7)
+        self.assertEqual(status, True)
+    
+    def test_sum_of_two3(self):
+        status = find_sum_of_two([2, 1, 8, 4, 7, 3], 20)
+        self.assertEqual(status, False)
+    
+    def test_sum_of_two4(self):
+        status = find_sum_of_two([5, 7, 1, 2, 8, 4, 3], 1)
+        self.assertEqual(status, False)
 
-find_sum_of_two([5, 7, 1, 2, 8, 4, 3],1)
-False
-False
-Succeeded
 
-find_sum_of_two([5, 7, 1, 2, 8, 4, 3],2)
-False
-False
-Succeeded
-
-find_sum_of_two([5, 7, 1, 2, 8, 4, 3],7)
-True
-True
-Succeeded
-'''
+if __name__ == '__main__':
+    unittest.main()
