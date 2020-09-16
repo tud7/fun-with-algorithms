@@ -17,3 +17,9 @@ Given two sorted linked lists, merge them so that the resulting linked list is a
 head1 -> 4 -> 8 -> 15 -> 19  
 head2 -> 7 -> 9 -> 10 -> 16  
 merged -> 4 -> 7 -> 8 -> 9 -> 10 -> 15 -> 16 -> 19  
+
+**string_segmentation.py**  
+Given a dictionary of words and a large input string, find out whether the input string can be completely segmented into the words of a given dictionary.  
+Dictionary: {apple, apple, pear, pie}  
+String: applepie  --> True  
+String: applepeer --> False  
